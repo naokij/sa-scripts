@@ -1,2 +1,2 @@
 #!/bin/bash
-lokkit --disabled --selinux=disabled
+lokkit --disabled --selinux=disabled -q

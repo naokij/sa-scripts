@@ -4,7 +4,7 @@ DRIVE=/dev/cciss/c0d0
 #device name for RHEL 6/CentOS 6
 #DRIVE=/dev/cciss/sg0
 EMAIL=report@dottogo.net
-INFO=`/usr/local/bin/cciss_vol_status -s $DRIVE`
+INFO=`/usr/bin/cciss_vol_status -s -V $DRIVE`
 HAS_E=`echo -e $INFO | grep 'fail'`
 
 if [ $HAS_E ]; then
